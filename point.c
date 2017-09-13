@@ -21,6 +21,10 @@ struct _PointPrivate{
 };
 
 /* Generic defines for quick retrieval */
+
+/* obtain the actual class structure (which can be a subclass of Point)
+ * from an object (class instance)
+ */
 #define POINT_GET_CLASS(object) (G_TYPE_INSTANCE_GET_CLASS((object), POINT_TYPE, PointClass))
 #define POINT_GET_PRIVATE(object) (G_TYPE_INSTANCE_GET_PRIVATE((object), POINT_TYPE, PointPrivate))
 

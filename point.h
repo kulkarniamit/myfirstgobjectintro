@@ -27,11 +27,6 @@
  * To test if a given class is a subclass of Point 
  */ 
 #define IS_POINT_CLASS(_class)       (G_TYPE_CHECK_CLASS_TYPE ((_class), POINT_TYPE))
-
-/* obtain the actual class structure (which can be a subclass of Point) 
- * from an object (class instance)
- */
-#define POINT_GET_CLASS(obj)         (G_TYPE_INSTANCE_GET_CLASS ((obj), POINT_TYPE, PointClass))
 /* End of Boilerplate defines */
 
 /* To declare derivable class, macro G_DECLARE_DERIVABLE_TYPE is used */
